@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class AdminController {
     @GetMapping("/sayHi")
     public String hiAdmin(){
-        return "Hey Admin. Welcome to the slot of your deployment.";
+        return "Ye mai pehli kar raha hu";
     }
 }
