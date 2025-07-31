@@ -16,6 +16,6 @@ public class AdminController {
     @GetMapping("/sayHi")
     public String hiAdmin(){
         logger.info("GET /admin/sayHi endpoint was called");
-        return "Ye mai pehli kar raha hu changes";
+        return "Updated the admin controller.";
     }
 }
