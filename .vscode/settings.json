@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b8a1549b-bed1-41a6-860c-0e80f01b85e7/resourceGroups/azureResourceSanket/providers/Microsoft.Web/sites/EnterpriseBanking",
+    "appService.deploySubpath": "build\\libs\\demo-0.0.1-SNAPSHOT.jar"
+}
