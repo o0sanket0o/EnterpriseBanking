@@ -8,6 +8,7 @@ import java.util.List;
 
 @Entity
 @NoArgsConstructor
+@Data
 @AllArgsConstructor
 @ToString
 @Table(name = "Users")
@@ -16,27 +17,19 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Setter
     @Column(name = "fullname", nullable = false)
     private String fullname;
 
-    @Setter
-    @Getter
     @Column(name = "email", unique = true, nullable = false)
     private String email;
 
-    @Setter
-    @Getter
     @Column(nullable = false)
     private String password;
 
     @Enumerated(EnumType.STRING)
-    @Setter
-    @Getter
     @Column(nullable = false)
     private UserRole role; // CUSTOMER, ADMIN, TELLER
 
-    @Setter
     private Boolean isBlocked = false;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
